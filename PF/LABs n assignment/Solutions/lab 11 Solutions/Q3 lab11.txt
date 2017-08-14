@@ -1,0 +1,41 @@
+//Name : Ammara khalid 
+//Roll no:BSEf14a006
+#include<iostream>
+using namespace std;
+
+void characters(char[],int );
+bool isPalindrome(char[],int );
+
+int main()
+{
+	const int size=4 ;
+	char arr[size];
+	characters(arr , size);
+	isPalindrome(arr , size);
+	return 0;
+}
+
+void characters(char arr[] , int size )
+{
+	cout<<"Enter characters in array :"<<endl;
+	for (int i = 0; i < size; i++)
+	{
+		cin>>arr[i];
+	}
+}
+
+bool isPalindrome(char arr[] , int size)
+{
+	for (int i = 0; i < size; i++)
+	{
+		if (arr[i] != arr[size - 1 - i])
+		{
+			return false ;
+		}
+		
+		
+	}
+	
+		cout<<"Is palindrome"<<endl;
+		return true;
+}

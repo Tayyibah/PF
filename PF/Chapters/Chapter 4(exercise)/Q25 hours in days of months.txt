@@ -1,0 +1,74 @@
+#include<iostream>
+#include<string>
+#include<iomanip>
+using namespace std;
+int main()
+{
+	int month,days,hrs,hours;
+	string month_1="January";
+	string month_2="February";
+	string month_3="March";
+	string month_4="April";
+	string month_5="May";
+	string month_6="June";
+	string month_7="July";
+	string month_8="August";
+	string month_9="September";
+	string month_10="October";
+	string month_11="November";
+	string month_12="December";
+	cout<<"    Month      Days                Hours"<<endl;
+	cout<<setw(10)<<month_1<<setw(30)<<"31                   744" <<endl;
+	cout<<setw(10)<<month_2<<setw(30)<<"28                   672"<<endl;
+	cout<<setw(10)<<month_3<<setw(30)<<"31                   744"<<endl;
+	cout<<setw(10)<<month_4<<setw(30)<<"30                   720"<<endl;
+	cout<<setw(10)<<month_5<<setw(30)<<"31                   744"<<endl;
+	cout<<setw(10)<<month_6<<setw(30)<<"30                   720"<<endl;
+	cout<<setw(10)<<month_7<<setw(30)<<"31                   744"<<endl;
+	cout<<setw(10)<<month_8<<setw(30)<<"30                   720"<<endl;
+	cout<<setw(10)<<month_9<<setw(30)<<"31                   744"<<endl;
+	cout<<setw(10)<<month_10<<setw(30)<<"30                   720"<<endl;
+	cout<<setw(10)<<month_11<<setw(30)<<"31                   744"<<endl;
+	cout<<setw(10)<<month_12<<setw(30)<<"30                   720"<<endl;
+		for(int i=1;i<12;i=i+2)
+		{
+		days=31;
+		hrs=24*days;
+		cout<<"Enter hours of month:";
+		cin>>hours;
+		if(hours==hrs)
+		{
+		cout<<"Congratz your hours are correct"<<endl;
+		}
+		else
+			cout<<"Wrong answer"<<endl;
+		}
+		for(int i=3;i<12;i=i+2)
+		{
+		days=30;
+		hrs=24*days;
+		cout<<"Enter hours of month:";
+		cin>>hours;
+		if(hours==hrs)
+		{
+		cout<<"Congratz your hours are correct"<<endl;
+		}
+		else
+			cout<<"Wrong answer"<<endl;
+		}
+		for(int i=2;;)
+		{
+		days=28;
+		hrs=24*days;
+		cout<<"Enter hours of month:";
+		cin>>hours;
+		if(hours==hrs)
+		{
+		cout<<"Congratz your hours are correct"<<endl;
+		}
+		else
+			cout<<"Wrong answer"<<endl;
+
+		}
+return 0;
+}

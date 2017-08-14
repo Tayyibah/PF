@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+double kineticEnergy(double m,double v);
+double getValue(double ,double);
+double k,m=0,v=0;
+int main()
+{
+getValue(m,v);
+kineticEnergy(m,v);
+cout<<"Kinetic Energy :"<<k<<endl;
+return 0;
+}
+
+double kineticEnergy(double m,double v)
+{
+	k=0.5*m*v*v;
+	return k;
+}
+
+double getValue(double m,double v)
+{
+	cout<<"Mass is: ";
+	cin>>m;
+	cout<<"Velocity is: ";
+	cin>>v;
+	return m,v;
+}

@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+void fallingDistance(int);
+	double t,d;
+	const double g=9.8;
+int main()
+{
+	for(int t=1;t<=10;t++)
+	{
+	fallingDistance(t);
+	}
+return 0;
+}
+
+void fallingDistance(int t)
+{
+d=(0.5)*g*t*t;
+cout<<"Distance at time "<<t<<" is "<<d<<endl;
+}

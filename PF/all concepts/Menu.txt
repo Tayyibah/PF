@@ -1,0 +1,31 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int num;
+	cout<<"Enter a number:";
+	cin>>num;
+	 int num_less=1;
+	 int num_equal=2;
+	 int num_greater=3;
+	cout<<"1)Number Lesser"<<endl;
+	cout<<"2)Number equal"<<endl;
+	cout<<"3)Number greater"<<endl;
+	if(num==num_less)
+	{
+	num=num*-1;
+	cout<<"Number is less than zero , it's positive is:"<<num<<endl;
+	}
+	else if(num==num_equal)
+	{
+	 num_equal=(num=0);
+	cout<<"Number is equal to zero "<<endl;
+	}
+	else if(num==num_greater)
+	{
+	 num_greater=(num>0);
+	cout<<"Number is greater than zero "<<endl;
+	}
+	return 0;
+}
+

@@ -1,0 +1,32 @@
+#include<iostream>
+#include<cmath>
+using namespace std;
+int main()
+{
+	int num,num1,num2;
+	cout<<"Enter a number: ";
+	cin>>num;
+	int large=0;
+	int small=0;
+	int i=0;
+	while(num!=-99)
+	{
+	cout<<"Enter a number: ";
+	cin>>num;
+	if(num>large)
+		{
+			large=num;
+			num2=large;
+		}
+	if(num<small)
+		{
+			small=num;
+			num1=small;
+		}
+	i++;
+	}
+			cout<<"Largest number is "<<num2<<endl;
+			cout<<"Smallest number is "<<num1<<endl;
+	return 0;
+}
+

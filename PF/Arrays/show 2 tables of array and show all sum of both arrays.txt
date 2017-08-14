@@ -1,0 +1,38 @@
+#include<iostream>
+#include<iomanip>
+#include<string>
+using namespace std;
+int main()
+{
+	int sum1=0,sum2=0;
+	const int rows1=3;
+	const int cols1=4;
+	const int rows2=5;
+	const int cols2=6;
+	int table1[rows1][cols1]={{1,2,3,1},{3,3,6,4},{5,6}};
+	int table2[rows2][cols2]={{1,2,3,1},{3,3,6,4},{5,6},{1,2,3,2},{2,3,4,1,5}};
+	cout<<"The contents of table 1 are "<<endl;
+	for(int i=0;i<rows1;i++)
+	{
+		for(int j=0;j<cols1;j++)
+		{
+		cout<<setw(3)<<table1[i][j]<<" ";
+		sum1=sum1+table1[i][j];
+		}
+		cout<<endl;
+	}
+		cout<<"The sum of all numbers in table1 are "<<sum1<<endl;
+
+		cout<<"The contents of table 2 are "<<endl;
+	for(int i=0;i<rows2;i++)
+	{
+		for(int j=0;j<cols2;j++)
+		{
+		cout<<setw(3)<<table2[i][j]<<" ";
+		sum2=sum2+table2[i][j];
+		}
+		cout<<endl;
+	}
+		cout<<"The sum of all numbers in table2 are "<<sum2<<endl;
+return 0;
+}

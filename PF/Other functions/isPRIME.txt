@@ -1,0 +1,78 @@
+#include<iostream>
+using namespace std;
+void isPrime(int);
+
+int main()
+{
+	int num;
+	bool a;
+	int ans,answ;
+	ans=num%num;
+	answ=num%1;
+	if(ans==0&&answ==0)
+		a=1;
+	else
+		a=0;
+		isPrime(3);
+		isPrime(4);
+return 0;
+}
+void isPrime(int num)
+{
+	bool a;
+cout<<"result is:"<<a<<endl;
+}
+
+
+#include<iostream> 
+using namespace std;
+
+void isPrime(int);
+int main()
+{
+	int num;
+		isPrime(num);
+return 0;
+}
+void isPrime(int num)
+{
+	int count=2,ans;
+	bool a;
+	cout<<"num";
+	cin>>num;
+while(count<num)
+{
+	ans=num%count;
+
+}
+count++;
+	
+if(ans==0)
+	{
+		a=0;
+cout<<a;
+}
+else
+	{
+		a=1;
+cout<<a;
+}}
+#include<iostream>
+using namespace std;
+void isPrime(int);
+void displayNum()
+{
+	int numfirst,numlast;
+	for(int num;numfirst<=numlast;num++)
+	{
+		cout<<"("<<num<<","<<num*num<<")"<<",";
+	}
+	
+
+	int main(int numfirst,int numlast)
+	{
+	displayNum();
+	cout<<"LAST NUM IS:\n";
+	numLast(5);
+	return0;
+	}

@@ -1,0 +1,13 @@
+﻿Build started 8/30/2015 1:19:18 PM.
+     1>Project "D:\Visual Studio n other docs\Visual Studio 2012\Projects\Concepts\enumeration or virtual\enumeration or virtual\enumeration or virtual.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Source.cpp
+         Source.cpp
+     1>d:\visual studio n other docs\visual studio 2012\projects\concepts\enumeration or virtual\enumeration or virtual\source.cpp(32): error C2275: 'main::EnumType' : illegal use of this type as an expression
+                 d:\visual studio n other docs\visual studio 2012\projects\concepts\enumeration or virtual\enumeration or virtual\source.cpp(30) : see declaration of 'main::EnumType'
+     1>d:\visual studio n other docs\visual studio 2012\projects\concepts\enumeration or virtual\enumeration or virtual\source.cpp(32): error C2228: left of '.speak' must have class/struct/union
+     1>Done Building Project "D:\Visual Studio n other docs\Visual Studio 2012\Projects\Concepts\enumeration or virtual\enumeration or virtual\enumeration or virtual.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.78

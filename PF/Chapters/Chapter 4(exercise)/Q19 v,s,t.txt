@@ -1,0 +1,73 @@
+#include<iostream>
+#include<iomanip>
+using namespace std;
+int main()
+{
+	int v,S,medium,t1,t2,t3,t4;
+	const int carbondioxide_speed=258.0;
+	const int air_speed=331.5;
+	const int water_speed=972.0;
+	const int steel_speed=1270.0;
+	const int carbondioxide_choice=1;
+	const int air_choice=2;
+	const int water_choice=3;
+	const int steel_choice=4;
+
+cout<<"Select any medium:";
+cin>>medium;
+cout<<fixed<<showpoint<<setprecision(4)<<endl;
+if(medium==carbondioxide_choice)
+{
+	cout<<"Enter the the number of seconds it has travelled:";
+	cin>>t1;
+	if(t1>10||t1<30)
+		{
+			cout<<"Enter valid time:";
+			cin>>t1;
+		}
+	S=t1*carbondioxide_speed;
+	cout<<"The distance covered is "<<S<<endl;
+}
+else if(medium==air_choice)
+{
+	cout<<"Enter the the number of seconds it has travelled:";
+	cin>>t2;
+	if(t2>10||t2<30)
+		{
+			cout<<"Enter valid time:";
+			cin>>t2;
+		}
+	S=t2*air_speed;
+	cout<<"The distance covered is "<<S<<endl;
+}
+else if(medium==water_choice)
+{
+	cout<<"Enter the the number of seconds it has travelled:";
+	cin>>t3;
+	if(t3>10||t3<30)
+	{
+		cout<<"Enter valid time:";
+		cin>>t3;
+	}
+	S=t3*water_speed;
+	cout<<"The distance covered is "<<S<<endl;
+}
+else if(medium==steel_choice)
+{
+	cout<<"Enter the the number of seconds it has travelled:";
+	cin>>t4;
+	if(t4>10||t4<30)
+	{
+		cout<<"Enter valid time:";
+		cin>>t4;
+	}
+	S=t4*steel_speed;
+	cout<<"The distance covered is "<<S<<endl;
+}
+
+else
+{
+	cout<<"Enter any of these three mediums thanks,"<<endl;
+}
+return 0;
+}

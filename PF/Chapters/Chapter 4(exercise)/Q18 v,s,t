@@ -1,0 +1,42 @@
+#include<iostream>
+#include<iomanip>
+using namespace std;
+int main()
+{
+	int S,medium,t;
+	const int airspeed=1100;
+	const int waterspeed=4900;
+	const int steelspeed=16400;
+	const int airchoice=1;
+	const int waterchoice=2;
+	const int steelchoice=3;
+cout<<"Select any medium:";
+cin>>medium;
+cout<<fixed<<showpoint<<setprecision(4)<<endl;
+if(medium==airchoice)
+{
+	cout<<"Enter the distance it has travelled:";
+	cin>>S;
+	t=S/airspeed;
+	cout<<"The time taken by distance to be covered in air is "<<t<<endl;
+}
+else if(medium==waterchoice)
+{
+	cout<<"Enter the distance it has travelled:";
+	cin>>S;
+	t=S/waterspeed;
+	cout<<"The time taken by distance to be covered in air is "<<t<<endl;
+}
+else if(medium==steelchoice)
+{
+	cout<<"Enter the distance it has travelled:";
+	cin>>S;
+	t=S/steelspeed;
+	cout<<"The time taken by distance to be covered in air is "<<t<<endl;
+}
+else
+{
+	cout<<"Enter any of these three mediums thanks,"<<endl;
+}
+return 0;
+}

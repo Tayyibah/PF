@@ -1,0 +1,32 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int employ_num,gross_pay,federal_tax,state_tax;
+	int total_pay=0,total_federal_tax=0,total_state_tax=0;
+	do
+	{
+	cout<<"Enter the employ number:";
+	cin>>employ_num;
+	cout<<"Enter gross pay of employ:";
+	cin>>gross_pay;
+	cout<<"Enter federal tax of employ:";
+	cin>>federal_tax;
+	cout<<"Enter state tax of employ:";
+	cin>>state_tax;
+	cout<<endl;
+	total_pay=total_pay+gross_pay;
+	total_federal_tax=total_federal_tax+federal_tax;
+	total_state_tax=total_state_tax+state_tax;
+	if(total_pay<total_state_tax||total_pay<total_federal_tax)
+	{
+		cout<<"Enter data of employ"<<employ_num<<"again"<<endl;
+	}
+	employ_num++;
+	}
+	while(employ_num!=0);
+	cout<<"The total gross pay is "<<total_pay<<endl;
+	cout<<"The total federal tax is "<<total_federal_tax<<endl;
+	cout<<"The total state tax is "<<total_state_tax<<endl;
+return 0;
+}

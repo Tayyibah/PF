@@ -1,0 +1,42 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	int num,digit;
+	int i = 0;
+	int j = 0;
+	int k = 0;
+	cout << "Enter a no.";
+	cin >> num;
+	int odd[5];
+	int even[5];
+	while (num != 0)
+	{
+		digit = num % 10;
+		num = num / 10;
+		if (digit % 2 == 0)
+		{
+			even[j] = digit;
+			j++;
+		}
+		else
+		{
+			odd[k] = digit;
+			k++;
+		}
+	}
+	cout << "TOtal Odd digits in this no.are: "<< k <<" which are ";
+	for (int i = 0; i < k; i++)
+	{
+		cout << odd[i] << " ";
+	}
+	cout << endl;
+	cout << "TOtal even digits in this no.are: " << j << " which are ";
+	for (int i = 0; i < j; i++)
+	{
+		cout << even[i] << " ";
+	}
+	cout << endl;
+}
+

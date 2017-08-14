@@ -1,0 +1,26 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	int size;
+	int size1;
+	cout<<"Enter a number";
+	cin>>size;
+	while (size<0)
+	{
+		cout<<"Enter valid number";
+		cin>>size;
+	}
+	size1=size;
+	for(int i=1; i<=size; i++)
+	{
+		for(int j=1; j<=size1; j++)
+		{
+			cout<<j;
+		}
+		size1=size1-1;
+		cout<<endl;
+	}
+	return 0;
+}

@@ -1,0 +1,62 @@
+#include<iostream>
+#include<cstdlib>
+using namespace std;
+int main()
+{
+	int choice,A;
+	const int circle=1;
+	const int rectangle=2;
+	const int triangle=3;
+	const int quit=4;
+
+cout<<"Select any choice:";
+cin>>choice;
+
+if(choice==circle)
+{
+	int r;
+	const double pi=3.14157;
+	cout<<"Enter radius :";
+	cin>>r;
+	A=pi*pow(r,2);
+	cout<<"The area of circle is "<<A<<endl;
+
+}
+
+else if(choice==rectangle)
+{
+	int l,w;
+	cout<<"Enter length :";
+	cin>>l;
+	cout<<"Enter width :";
+	cin>>w;
+	A=l*w;
+	cout<<"The area of rectangle is "<<A<<endl;
+
+}
+
+else if(choice==triangle)
+{
+	int b,h;
+	cout<<"Enter breath :";
+	cin>>b;
+	cout<<"Enter height :";
+	cin>>h;
+	A=1/2*b*h;
+	cout<<"The area of triangle is "<<A<<endl;
+
+}
+
+else if(choice==quit)
+{
+	cout<<"Press Enter key to quit.";
+	cin.get();
+}
+
+else
+{
+	cout<<"Enter any of these four choices thanks,"<<endl;
+}
+
+return 0;
+}

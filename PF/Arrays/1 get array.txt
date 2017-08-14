@@ -1,0 +1,25 @@
+#include<iostream>
+using namespace std;
+void getArray(int[],const int);
+int main()
+{
+	const int size=5;
+	int arr[size];
+	getArray(arr,size);
+	return 0;
+}
+
+
+void getArray(int arr[],const int size)
+{
+	cout<<"Enter the contents of array are ";
+	for(int i=0;i<size;i++)
+	{
+	cin>>arr[i];
+	}
+	cout<<"The contents of array are ";
+	for(int i=0;i<size;i++)
+	{
+	cout<<" "<<arr[i]<<" ";
+	}
+}

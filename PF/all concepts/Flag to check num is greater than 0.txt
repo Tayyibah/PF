@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	bool condition =false;
+	int num;
+	cout<<"Enter a number:";
+	cin>>num;
+	if(num>0)
+	{
+	condition=true;
+	}
+	else
+	{
+	condition=false;
+	}
+	if(condition)
+	{
+	cout<<"Number is positive "<<endl;
+	}
+	return 0;
+}

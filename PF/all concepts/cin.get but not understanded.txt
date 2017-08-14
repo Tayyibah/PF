@@ -1,0 +1,14 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	char n,c;
+	cout<<"Enter your name:";
+	n=cin.get();
+	cout<<"Enter your city:";
+	cin.get(c);
+	cout<<"Enter your city again:";
+	cin.get();
+	cout<<n<<" live in "<<c<<endl;
+return 0;
+}

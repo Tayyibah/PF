@@ -1,0 +1,65 @@
+//Task: 4
+//	Implement a function  specialSearch  which takes a one - dimensional array of integers, its size,
+//	and an integer  key  as arguments.This function will determine the number of elements less than,
+//	and number of elements greater than key in the given array.The prototype of your function
+//	should be :
+//	 void specialSearch(int arr[], int n, int key, int& numLess, int& numGreater)
+//	 In the above function prototype : arr is an array which contains  n integers in unsorted order, key
+//	 is the value based upon which the searching will be performed, numLess  and  numGreater  are
+//	 reference parameters which will be used to return the counts of the number of elements
+#include<iostream>
+using namespace std;
+void specialSearch(int arr[], int size, int key/* int& numLess, int& numGreater*/)
+{
+	int *temp = new int[size];
+	int *temporary = new int[size];
+	int j = 0;
+	int k = 0;
+	for (int i = 0; i <size; i++)
+	{
+		if (arr[i] < key)
+		{
+			temp[j]=arr[i];
+			j++;
+		}
+	}
+	cout << "No. less than key :";
+	for (int i = 0; i <j; i++)
+	{
+		cout << temp[i]<<",";
+	}
+	cout << endl;
+	for (int i = 0; i <size; i++)
+	{
+		if (arr[i] >key)
+		{
+			temporary[k] = arr[i];
+			k++;
+		}
+	}
+	cout << endl;
+	cout << "No. greater than key :";
+	for (int i = 0; i <k; i++)
+	{
+		cout << temporary[i] << ",";
+	}
+	cout << endl;
+	delete[]temporary;
+	delete[]temp;
+	return ;
+}
+int main()
+{
+	const int size = 5; 
+	int arr[size] = { 1, 2, 3, 4, 5 }; 
+	int key;
+	cout << "Enter key u want to  key upon which the searching will be performed ";
+	cin >> key;
+	specialSearch(arr, size, key);
+	for (int i = 0; i <size; i++)
+	{
+		cout<<arr[i];
+	}
+	cout << endl;
+	return 0;
+}

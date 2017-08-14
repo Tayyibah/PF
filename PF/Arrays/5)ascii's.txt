@@ -1,0 +1,13 @@
+#include<iostream>
+#include<string>
+using namespace std;
+int main()
+{
+	const int size=26;
+	char alpha[size]={'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'};
+	for(int i=1;i<26;i++)
+	{
+	cout<<alpha[i]<<" -------------------------- "<<static_cast<int>(alpha[i])<<endl;
+	}
+	return 0;
+}

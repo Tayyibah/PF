@@ -1,0 +1,39 @@
+#include<iostream>
+using namespace std;
+double getLength(int);
+double getWidth(int);
+double getArea(int,int);
+void displayData(int,int,int);
+int A=0;
+	int length=0,width=0,area=0;
+int main()
+{	
+	getLength(length);
+	getWidth(width);
+	getArea(length,width);
+	displayData(length,width,area);
+return 0;
+}
+double getLength(int l)
+{
+	cout<<"Enter length:";
+	cin>>length;
+	return length;
+}
+double getWidth(int w )
+{
+	cout<<"Enter width:";
+	cin>>width;
+	return width;
+}
+double getArea(int length,int w )
+{
+	A=length*width;
+	return A;
+}
+void displayData(int l,int w,int a)
+{
+	cout<<"Length of triangle is "<<length<<endl;
+	cout<<"Width of triangle is "<<width<<endl;
+	cout<<"Area of triangle is "<<A<<endl;
+}

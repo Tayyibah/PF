@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+int sumOfNumbers(int);
+int sum=0;
+int main()
+{
+	int num;
+	cout<<"Enter a number : ";
+	cin>>num;
+	if(num<0)
+		{
+	cout<<"Enter a number again that is greater than 0 : ";
+	cin>>num;
+		}
+	for(int i=0;i<=num;i++)
+			{
+	sumOfNumbers(i);
+			}
+cout<<" Sum of all numbers is  "<<sum<<endl;
+return 0;
+}
+
+int sumOfNumbers(int num)
+{
+sum=sum+num;
+return sum;
+}

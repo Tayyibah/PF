@@ -1,0 +1,17 @@
+void displayNum();
+int num=6;
+int main()
+{
+	cout <<"num:"<<num;
+	displayNum();
+	cout<<"Now num:"<<num<<endl;
+	return 0;
+}
+void displayNum()
+{
+
+cout <<"num:"<<num<<endl;
+num=9;
+cout<<num;
+
+}

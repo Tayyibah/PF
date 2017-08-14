@@ -1,0 +1,14 @@
+#include<iostream>
+#include<iostream>
+using namespace std;
+int main()
+{
+	int count=0;
+	int total=0;
+	const int size=5;
+	int arr[size]={4,2,3,4,5};
+	for(int count=0;count<size;count++)
+	total+=arr[count];
+	cout<<total<<endl;
+	return 0;
+}

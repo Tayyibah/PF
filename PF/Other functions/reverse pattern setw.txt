@@ -1,0 +1,28 @@
+    1
+   12
+  123
+ 1234
+
+#include<iostream>
+#include<iomanip>
+using namespace std;
+int main()
+{
+	int i,j,size;
+	int n=0;
+	cout<<"size:";
+	cin>>size;
+	 n=size;
+	for(i=1;i<=size;i++)
+		{
+			cout<<right<<setw(n);
+			for(j=1;j<=i;j++)
+			{
+				cout<<j;
+			}
+			n--;
+			cout<<endl;
+	}
+	cout<<endl;
+	return 0;
+}

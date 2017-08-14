@@ -1,0 +1,44 @@
+mujhe idhar copy paste kr k bhej do#include<iostream>
+#include<iomanip>
+using namespace std;
+	int main()
+{
+	int i=1,j,num,k=1;
+	cout<<"enter positive integer";
+	cin>>num;
+	while(num<1)
+	{
+		cout<<" enter valid integer greater then 0:";
+		cin>>num;
+	}
+
+	j=1;
+	cout<<"      ";
+	while(j<=num)
+		{
+			cout<<setw(4)<<j;
+			j++;
+		}
+			cout<<endl;
+		j=1;
+		cout<<"     +";
+		while(j<=num)
+		{
+			cout<<"----";
+			j++;
+		}
+		cout<<endl;
+	while(i<=num)
+	{
+		cout<<setw(4)<<i<<" |";
+		j=1;
+		while(j<=num)
+		{
+			cout<<setw(4)<<i*j;
+			j++;
+		}
+		cout<<endl;
+		i++;
+	}
+	return 0;
+}

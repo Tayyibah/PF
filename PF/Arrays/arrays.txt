@@ -1,0 +1,144 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+int ARRAY[10];
+int sum=0;
+for(int i=0;i<10;i++)
+	{
+cin>>ARRAY[i];
+sum=sum+ARRAY[i];
+	}
+cout<<sum;
+return 0;
+}
+
+
+
+
+
+
+
+
+#include<iostream>
+using namespace std;
+int main()
+{
+int old_array[5];
+int new_array[5];
+int i;
+cout<<"5 num are:";
+
+for(int i=0;i <5;i++)
+	{
+		cin>>old_array[i];
+		new_array[i]=old_array[i];
+	cout<<"new_array"<<i<<new_array[i];
+	}
+	
+
+return 0;
+}
+
+
+
+
+#include<iostream>
+using namespace std;
+int main()
+{
+int ARRAY[10];
+int avg=0;
+int sum=0;
+for(int i=0;i<10;i++)
+	{
+cin>>ARRAY[i];
+sum=sum+ARRAY[i];
+	}
+avg=sum/10;
+cout<<"avg"<<avg;
+return 0;
+}
+
+
+
+
+
+
+#include<iostream>
+using namespace std;
+int main()
+{
+	const int arr=5;
+	int size[arr]={1,2,5,6,7};
+	cout<<"size of array of integers"<<sizeof(arr)/sizeof(int)<<endl;
+	cout<<"size of array of double"<<sizeof(double)<<endl;
+cout<<"size of array of char"<<sizeof(char)<<endl;
+cout<<"size of array of float"<<sizeof(float)<<endl;
+return 0;
+}
+
+
+
+
+
+
+#include<iostream>
+using namespace std;
+int main()
+{
+const int arr=2;
+int arr[2];
+int max1,max2,max,i,j;
+cin>> arr[i];
+cin >>arr[j];
+
+	if(arr[i]>max)
+{
+max2=max;
+max=a[i]}
+}
+else if(a[i]>max2)
+{
+max2=a[i];
+}
+
+
+
+
+
+#include<iostream>
+using namespace std;
+int main()
+{
+const int size=100;
+int nums[size];
+int i;
+int highest;
+highest=nums[0];
+for(i=1;i<size;i++)
+{
+if(nums[i]>highest)
+	highest=nums[i];
+}
+cout<<highest;
+return 0;
+}
+
+
+
+
+
+#include<iostream>
+using namespace std;
+int main()
+{
+const int size=5;
+int first_arr[size]={3,4,5,2,3};
+int sec_arr[size]={3,4,5,2,3};
+if( first_arr[size]==sec_arr[size])
+	cout<<"equal"<<endl;
+else
+	cout<<"not equal"<<endl;
+return 0;
+}

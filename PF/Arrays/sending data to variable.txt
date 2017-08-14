@@ -1,0 +1,21 @@
+#include<iostream>
+#include<string>
+#include<iomanip>
+using namespace std;
+
+int main()
+{
+	int i;
+	const int num=8;
+	int arr1[num]={6,6,6,6,7};
+	int arr2[num]={65,67,68,69,70};
+	for(int count=0;count<num;count++)
+	{
+		int result;
+		cout<<arr1[count]<<endl;
+		cout<<arr2[count]<<endl;
+		result=arr1[count]*arr2[count];
+		cout<<"Num1*num2"<<result<<endl;
+	}
+	return 0;
+}

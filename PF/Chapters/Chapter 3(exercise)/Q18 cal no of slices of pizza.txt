@@ -1,0 +1,19 @@
+#include<iostream>
+#include<iomanip>
+#include<cmath>
+using namespace std;
+int main()
+{
+	const double pi=3.14;
+	int d,r;
+	double A,n;
+	cout<<"Enter diameter of pizza: ";
+	cin>>d;
+	r=d/2;
+	A=pi*pow(r,2);
+	cout<<"Area of pizza: "<<A<<endl;
+	cout<<"No. of slices:  ";
+	n=A/14.125;
+	cout<<n<<endl;
+	return 0;
+}

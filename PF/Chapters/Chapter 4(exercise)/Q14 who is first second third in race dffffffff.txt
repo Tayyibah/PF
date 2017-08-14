@@ -1,0 +1,44 @@
+#include<iostream>
+#include<string>
+using namespace std;
+int main()
+{
+	string r1,r2,r3;
+	int t1,t2,t3;
+	cout<<"Enter name of r1:";
+	getline(cin,r1);
+	cout<<"Enter name of r2:";
+	getline(cin,r2);
+	cout<<"Enter name of r3:";
+	getline(cin,r3);
+	cout<<"Enter time of completion of r1:";
+	cin>>t1;
+	if(t1<0)
+	{
+	cout<<"Time can't be negative,Enter time of completion of r1 again:";
+	cin>>t1;
+	}
+	cout<<"Enter time of completion of r2:";
+	cin>>t2;
+	if(t2<0)
+	{
+	cout<<"Time can't be negative,Enter time of completion of r2 again:";
+	cin>>t2;
+	}
+	cout<<"Enter time of completion of r3:";
+	cin>>t3;
+	if(t3<0)
+	{
+	cout<<"Time can't be negative,Enter time of completion of r3 again:";
+	cin>>t3;
+	}
+	if(t1<t2&&t1<t3)
+		cout<<r1<<" is first in the race."<<endl;
+	else if(t2<t1&&t2<t3)
+		cout<<r2<<" is first in the race."<<endl;
+	else if(t3<t1&&t3<t1)
+		cout<<r3<<" is first in the race."<<endl;
+
+
+	return 0;
+}

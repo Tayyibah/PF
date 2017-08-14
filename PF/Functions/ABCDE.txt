@@ -1,0 +1,39 @@
+#include<iostream>
+using namespace std;
+void isDigit (char); // returns true if the parameter is a digit.
+void isArithmeticOperator(char); // returns true if the parameter is an arithmetic operator.
+void isSmall(char); // returns true if the parameter is a small alphabet.
+void isCapital(char); // returns true if the parameter is a capital alphabet.
+
+int main()
+{
+	char ch=0;
+	cout<<ch;
+	cin>>ch;
+	if(ch>='97'&&ch<='120')
+	{
+	void isSmall(char);
+	}
+	else if(ch>='65'&&ch<='90')
+	{
+	void isCapital(char);
+	}
+	else
+		void isDigit (char);
+	return 0;
+}
+
+	void isSmall(char)
+	{
+		cout<<"character is small";
+	}
+	
+
+	void isDigit (char)
+	{
+		cout<<"character is digit";
+	}
+		void isCapital(char)
+		{
+			cout<<"character is capital";
+		}

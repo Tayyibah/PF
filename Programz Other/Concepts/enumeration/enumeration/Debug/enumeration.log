@@ -1,0 +1,12 @@
+﻿Build started 8/23/2015 11:27:20 PM.
+     1>Project "D:\docs\Visual Studio 2012\Projects\enumeration\enumeration\enumeration.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Source.cpp
+         Source.cpp
+     1>d:\docs\visual studio 2012\projects\enumeration\enumeration\source.cpp(22): error C2371: 'temp' : redefinition; different basic types
+                 d:\docs\visual studio 2012\projects\enumeration\enumeration\source.cpp(21) : see declaration of 'temp'
+     1>Done Building Project "D:\docs\Visual Studio 2012\Projects\enumeration\enumeration\enumeration.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.85

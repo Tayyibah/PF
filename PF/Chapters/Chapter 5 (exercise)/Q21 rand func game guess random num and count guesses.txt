@@ -1,0 +1,45 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+int bugdet,exp,total=0,amt;
+cout<<"Enter bugdet of user:";
+cin>>bugdet;
+for(int i=0;i<bugdet;i++)
+{
+cout<<"Enter the expenses of a day:";
+cin>>exp;
+total=total+exp;
+}
+cout<<total<<" is the amount of expenses the user has taken"<<endl;
+amt=bugdet-total;
+cout<<"The amoun#include<iostream>
+#include<ctime>
+#include<cstdlib>
+using namespace std;
+int main()
+{
+	int rand_num,guess_num,num,guesses=0;
+	num=rand();
+	cout<<"Let's play a game after so much programming "<<endl;
+	for(int i=0;num!=guess_num;i++)
+		{
+	cout<<"Enter a number:";
+	cin>>guess_num;
+		if(guess_num<num)
+		cout<<"Too less, try again"<<endl;
+		else if(guess_num>num)
+		cout<<"Too high, try again"<<endl;
+		else
+			{
+		cout<<"Congratz , you have guessed correctly "<<guess_num<<" is equal to "<<num<<endl;
+			}
+		guesses=guesses+i;
+	}
+	cout<<"You have guessed "<<guesses<<" no. of times."<<endl;
+	if(guesses<10)
+		cout<<"You have won"<<endl;
+	return 0;
+}t left from the bugdet is "<<amt<<endl;
+return 0;
+}

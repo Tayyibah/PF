@@ -1,0 +1,33 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+int no_year=0,rainfall_inches=0,total_rainfall=0,j;
+cout<<"Enter no. of years:";
+cin>>no_year;
+	if(no_year<0)
+	{
+	cout<<"Enter no. of years again that is positive:";
+	cin>>no_year;
+	}
+for(int i=1;i<=no_year;i++)
+	{
+		for( j=1;j<=12;j++)
+			{
+			cout<<"The inches of rainfall in year "<<i<<" for month "<<j<<" is ";
+			cin>>rainfall_inches;
+				if(rainfall_inches<0)
+					{
+						cout<<"The inches of rainfall in year "<<i<<" for month "<<j<<" is ";
+						cin>>rainfall_inches;
+					}
+			total_rainfall=total_rainfall+rainfall_inches;
+			}
+	}
+cout<<"The no. of months having rainfall are "<<j-1<<endl;
+cout<<"The total rainfall is "<<total_rainfall<<endl;
+int avg;
+avg=total_rainfall/rainfall_inches;
+cout<<"The average rainfall per month is "<<avg<<endl;
+return 0;
+}

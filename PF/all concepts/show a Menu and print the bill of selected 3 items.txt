@@ -1,0 +1,83 @@
+#include<iostream>
+#include<iomanip>
+#include<string>
+using namespace std;
+int main()
+{
+	double Total_bill=0;
+	double bill=0;
+	double price;
+
+	cout<<setw(11)<<"Item number"<<setw(30)<<"Item name"<<setw(18)<<"Item price"<<endl;
+	cout<<"_____________________________________________________________"<<endl;
+	cout<<setw(11)<<"1"<<setw(30)<<"Plain egg"<<setw(15)<<"7"<<endl;
+	cout<<setw(11)<<"2"<<setw(30)<<"Bacon&Egg"<<setw(15)<<"12"<<endl;
+	cout<<setw(11)<<"3"<<setw(30)<<"Muffin"<<setw(15)<<"10"<<endl;
+	cout<<setw(11)<<"4"<<setw(30)<<"French Toast"<<setw(15)<<"20"<<endl;
+	cout<<setw(11)<<"5"<<setw(30)<<"Fruit Basket"<<setw(15)<<"25"<<endl;
+	cout<<setw(11)<<"6"<<setw(30)<<"Cereal"<<setw(15)<<"30"<<endl;
+	cout<<setw(11)<<"7"<<setw(30)<<"Tea"<<setw(15)<<"15"<<endl;
+	cout<<"_____________________________________________________________"<<endl;
+
+	const int Plain_egg=1;
+	const int Bacon_Egg=2;
+	const int Muffin=3;
+	const int French_Toast=4;
+	const int Fruit_Basket=5;
+	const int Cereal=6;
+	const int Tea=7;
+
+	int choice;
+
+	for(int i=1;i<=3;i++)
+	{
+	cout<<"Enter choice:";
+	cin>>choice;
+		if(choice==Plain_egg)
+			{
+			price=7+0.1;
+			bill=price+bill;
+			}
+
+		
+		else if(Bacon_Egg==Plain_egg)
+			{
+			price=12+0.1;
+			bill=price+bill;
+			}
+
+		else if(choice==Muffin)
+			{
+			price=10+0.1;
+			bill=price+bill;
+			}
+		
+		else if(choice==French_Toast)
+			{
+			price=20+0.1;
+			bill=price+bill;
+			}
+		
+		else if(choice==Fruit_Basket)
+			{
+			price=25+0.1;
+			bill=price+bill;
+			}
+		
+		else if(choice==Cereal)
+			{
+			price=30+0.1;
+			bill=price+bill;
+			}
+		
+		else if(choice==Tea)
+			{
+			price=15+0.1;
+			bill=price+bill;
+			}
+		Total_bill=Total_bill+bill;
+	}
+	
+	cout<<"Bill is :"<<Total_bill<<endl;
+return 0;
+}

@@ -1,0 +1,26 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int books,points;
+	cout<<"Menu of points per book\n";
+	cout<<"0 points for 0 books\n";
+	cout<<"5 points for 1 books\n";
+	cout<<"15 points for 2 books\n";
+	cout<<"30points for 3 books\n";
+	cout<<"60 points for 4 books\n";
+	cout<<"Enter number of book purchased:";
+	cin>>books;
+	if(books<0)
+		cout<<"Customer has earned 0 points."<<endl;
+	if(books==1)
+		cout<<"Customer has earned 5 points."<<endl;
+	if(books==2)
+		cout<<"Customer has earned 15 points."<<endl;
+	if(books==3)
+		cout<<"Customer has earned 30 points."<<endl;
+	if(books==4||books>4)
+		cout<<"Customer has earned 60 points."<<endl;
+
+	return 0;
+}

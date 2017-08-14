@@ -1,0 +1,45 @@
+#include<iostream>
+using namespace std;
+int in_patient();
+int	out_patient();
+int patient,total_charges,days,rate,charges,service_charges;
+const int outpatient=2,inpatient=1;
+int main()
+{
+	cout<<"Enter the patient:";
+	cin>>patient;
+	if(patient==inpatient)
+		{
+	in_patient();
+		}
+	else if(patient==outpatient)
+		{
+	out_patient();
+		}
+	cout<<"The total charges for a patient is "<<total_charges<<endl;
+return 0;
+}
+
+int in_patient()
+{
+cout<<"How many "<<patient<<" has spent in the hospital.";
+cin>>days;
+cout<<"What is the daily rate for a patient in the hospital.";
+cin>>rate;
+cout<<"What is the hospital medication charges:";
+cin>>charges;
+cout<<"What are the hospital service charges:";
+cin>>service_charges;
+total_charges=days*rate*(charges+service_charges);
+return total_charges;
+}
+
+int	out_patient()
+{
+cout<<"What is the hospital medication charges:";
+cin>>charges;
+cout<<"What are the hospital service charges:";
+cin>>service_charges;
+total_charges=charges+service_charges;
+return total_charges;
+}

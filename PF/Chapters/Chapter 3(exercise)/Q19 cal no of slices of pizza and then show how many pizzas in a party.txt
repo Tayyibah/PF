@@ -1,0 +1,26 @@
+#include<iostream>
+#include<iomanip>
+#include<cmath>
+using namespace std;
+int main()
+{
+	const double pi=3.14;
+	int d,r,p;
+	int A,n,T;
+	cout<<"Enter no. of people attending the party: ";
+	cin>>p;
+	cout<<"Enter diameter of pizza: ";
+	cin>>d;
+	r=d/2;
+	A=pi*pow(r,2);
+	cout<<"Area of pizza: "<<A<<endl;
+	cout<<"No. of slices:  ";
+	n=A/4;
+	cout<<n<<endl;
+	T=p*4;
+	cout<<"Every person attending the party will eat 4 slices so total slices wil be " <<T<<endl;
+	cout<<"No. of pizzas in a party will be  "<<T/n<<endl;
+	
+	return 0;
+}
+

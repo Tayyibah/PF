@@ -1,0 +1,24 @@
+#include<iostream>
+#include<iomanip>
+using namespace std;
+int main()
+{
+	double total,average;
+	const int num_students=3;
+	const int num_scores=5;
+	int scores[num_students][num_scores]={{1,2,3,4,5},
+											{6,7,8,7,6},
+												{6,5,4,3,2}};
+	for(int cols=0;cols<num_scores;cols++)
+	{
+		total=0;	
+	for(int row=0;row<num_students;row++)
+		{
+			total=total+scores[row][cols];
+		}
+		
+			average=total/num_students;
+			cout<<"Score average for student "<<cols+1<<" is "<<average<<endl;
+	}
+return 0;
+}

@@ -1,0 +1,20 @@
+/*) One acre of land is equivalent to 43,560 square feet. Write a program that 
+calculates the number of acres in a trace of land with 389,767 square feet.*/
+#include<iostream>
+using namespace std;
+int main()
+{
+
+	int acre,acreland,count=0;
+	cout<<"enter One acre of land: ";
+	cin>>acre;
+	cout<<"enter acre of land: ";
+	cin>>acreland;
+	while(acreland!=0)
+	{
+	acreland=acreland-acre;
+	count++;
+	}
+	cout<<count <<"acres are there in"<<acreland<<" of land "<<endl;
+		return 0;
+}

@@ -1,0 +1,37 @@
+#include<iostream>
+#include<string>
+using namespace std;
+int main()
+{
+	string name;
+	string city;
+	string college;
+	string profession;
+	string animal;
+	string pet;
+	string age;
+
+	cout<<"Enter user name:";
+	getline(cin,name);
+	
+	cout<<"Enter his age:";
+	getline(cin,age);
+
+	cout<<"Enter name of his city:";
+	getline(cin,city);
+
+	cout<<"Enter name of his college:";
+	getline(cin,college);
+
+	
+	cout<<"Enter his profession:";
+	getline(cin,profession);
+
+	cout<<"Enter type of animal:";
+	getline(cin,animal);
+
+	cout<<"Enter pet's name:";
+	getline(cin,pet);
+
+return 0;
+}

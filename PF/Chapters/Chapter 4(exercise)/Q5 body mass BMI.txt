@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+int weight,height,BMI;
+cout<<"Enter weight of person:";
+cin>>weight;
+cout<<"Enter height of person:";
+cin>>height;
+BMI=weight*703/pow(height,2);
+cout<<"The body mass index of person is "<<BMI<<endl;
+if(BMI>18.5&&BMI>25)
+	cout<<"His sedenary lifestyle is optimal"<<endl;
+else if(BMI<18.5)
+cout<<"He is underweight"<<endl;
+else if(BMI<25)
+cout<<"He is overweight"<<endl;
+return 0;
+}

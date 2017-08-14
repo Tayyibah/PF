@@ -1,0 +1,137 @@
+#include<iostream>
+using namespace std;
+
+bool addArrays1d(int * arr1, int s1, int * arr2, int s2);
+bool addArrays2d(int **arr3, int r1, int c1, int **arr4, int r2, int c2);
+
+int main()
+{
+	int size1,size2;
+	int *a1;
+	int *a2;
+	cout<<" Enter size of array1 :";
+	cin>>size1;
+	a1=new int[size1];
+
+	cout<<" Enter size of array2 :";
+	cin>>size2;
+	a2=new int[size2];
+
+	for(int i=0; i<size1; i++)
+	{
+		cout<<" enter value of index "<<i<<" : ";
+		cin>>a1[i];
+	}
+	for(int i=0; i<size2; i++)
+	{
+		cout<<" enter value of index "<<i<<" : ";
+		cin>>a2[i];
+	}
+
+	bool found=addArrays1d(a1,size1,a2,size2);
+	if(found==true)
+	{
+		cout<<endl<<"Arrays can be added "<<endl;
+		
+	}
+	else
+	{
+		cout<<"sorry: as the sizes of enterd array are not equal so arrays cannot be added"<<endl;
+	}
+
+	cout<<"Two_D Array"<<endl<<endl;
+
+
+	int row1,col1;
+	int row2,col2;
+	int **a3;
+	int **a4;
+
+	cout<<"how many rows you want  for array3 :";
+	cin>>row1;
+	cout<<"how many columnms do you want for column for array3 :";
+	cin>>col1;
+	cout<<"how many rows you want for  array4 :";
+	cin>>row2;
+	cout<<"how many columns you want for  for array4 :";
+	cin>>col2;
+	a3=new int*[row1];
+	for(int i=0;i<row1;i++)
+		a3[i]=new int[col1];
+	a4=new int*[row2];
+	for(int i=0;i<row2;i++)
+		a4[i]=new int[col2];
+	for(int i=0; i<row1; i++)
+	{
+		for(int j=0; j<col1; j++)
+		{
+			cout<<" Enter value of row "<<i+1<<" and column "<<j+1<<" : ";
+			cin>>a3[i][j];
+		}
+	}
+	for(int i=0; i<row2; i++)
+	{
+		for(int j=0; j<col2; j++)
+		{
+			cout<<" Enter value of row "<<i+1<<" and column "<<j+1<<" : ";
+			cin>>a4[i][j];
+		}
+	}
+
+
+	bool found1=addArrays2d(a3,row1,col1,a4, row2, col2);
+
+	if(found1==true)
+	{
+		cout<<endl<<"Arrays acn be added successfully"<<endl;
+		
+		
+	}
+	else
+	{
+		cout<<endl<<"sorry: sizes not equal so we canot add the entered arrays"<<endl;
+	}
+
+
+
+
+	return 0;
+	
+}
+bool addArrays1d(int * arr1, int s1, int * arr2, int s2)
+{
+	if(s1==s2)
+	{
+		for(int i=0; i<s1; i++)
+		{
+			arr1[i]=arr1[i]+arr2[i];
+		}
+
+		return true;
+	}
+	else
+	{
+		return false;
+	}
+}
+
+bool addArrays2d(int **arr3, int r1, int c1, int **arr4, int r2, int c2)
+{
+	if(r1==r2 && c1==c2)
+	{
+		for(int i=0; i<r1; i++)
+		{
+			for(int j=0; j<c1; j++)
+			{
+			
+			arr3[i][j]=arr3[i][j]+arr4[i][j];
+			}
+		}
+
+		return true;
+	}
+	else
+	{
+		return false;
+	}
+}

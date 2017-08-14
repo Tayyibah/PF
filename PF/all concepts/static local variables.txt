@@ -1,0 +1,15 @@
+#include<iostream>
+using namespace std;
+void showValue();
+int main()
+{
+	showValue();
+	showValue();
+return 0;
+}
+void showValue()
+{
+	int localVariable=5;
+	cout<<"localVariable is "<<localVariable<<endl;
+	localVariable=99;
+}

@@ -1,0 +1,27 @@
+#include<iostream>
+#include<string>
+using namespace std;
+int main()
+{
+	const int rows_size=2;
+	const int cols_size=2;
+	int table[rows_size][cols_size];
+	cout<<"Now,I would tell u about the table:"<<endl;
+	for(int i=0;i<rows_size;i++)
+	{
+		for(int j=0;j<cols_size;j++)
+		{
+		cout<<"The table of row "<<i+1<<" and column "<<j+1<<" is ";
+		cin>>table[i][j];
+		}
+	}
+
+	for(int i=0;i<rows_size;i++)
+	{
+		for(int j=0;j<cols_size;j++)
+		{
+		cout<<table[i][j]<<" ";
+		}
+	}
+return 0;
+}

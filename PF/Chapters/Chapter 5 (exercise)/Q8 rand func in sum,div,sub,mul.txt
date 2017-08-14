@@ -1,0 +1,49 @@
+
+	unsigned(seed)=time(0);
+	srand(seed);
+#include<iostream>
+#include<ctime>
+#include<cstdlib>
+using namespace std;
+int main()
+{
+	int x,y,z,operation;
+	x=rand();
+	y=rand();
+	cout<<"Enter a random number"<<x<<endl;
+	cout<<"Enter another random number"<<y<<endl;
+	const int addition=1;
+	const int subtraction=2;
+	const int multiplication=3;
+	const int division=4;
+
+	 int addition_operation=x+y;
+	 int subtraction_operation=x-y;
+	 int multiplication_operation=x*y;
+	 int division_operation=x/y;
+
+	 do{
+	
+	 cout<<"An operation to be performed in both random numbers is ";
+	 cin>>operation;
+	 if(operation==1)
+		 cout<<x<<"+"<<y<<"="<<addition_operation<<endl;
+	 else if(operation==2)
+		 cout<<x<<"-"<<y<<"="<<subtraction_operation<<endl;
+	 else if(operation==3)
+		 cout<<x<<"*"<<y<<"="<<multiplication_operation<<endl;
+	 else if(operation==4)
+		 cout<<x<<"/"<<y<<"="<<division_operation<<endl;
+	 else if(operation==5)
+		cout<<"Press Enter key to quit"<<endl;
+		cin.get();
+}while(operation!=5);
+
+	return 0;
+}
+
+	 else
+		 {
+			cout<<"Write right operation:";
+			cin>>operation;
+		 }

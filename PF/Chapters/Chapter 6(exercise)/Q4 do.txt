@@ -1,0 +1,45 @@
+//enter no. of accidents and name where they occurred later print the name which has lowest accident
+#include<iostream>
+#include<string>
+using namespace std;
+int getNumAccidents();
+void findLowest();
+	string n,name,num;
+	int accident=0;
+	int lowest=0;
+int main()
+{
+	for(int i=1;i<=5;i++)
+	{
+	getNumAccidents();
+	findLowest();
+	}
+	
+	cout<<"The smallest accident is in "<<n<<endl;
+return 0;
+}
+
+
+int getNumAccidents()
+{
+	int accidents;
+	cout<<"Enter the geographic region names:";
+	cin>>name;
+	cout<<"How many accidents were reported in the last year?\nAns: ";
+	cin>>accidents;
+	return accidents;
+	
+}
+
+
+void findLowest()
+{
+	
+	lowest=accident;
+	num=lowest;
+	if(accident<lowest)
+	{	
+	n=name;
+	cout<<"The smallest accident is in "<<n<<endl;
+	}
+}

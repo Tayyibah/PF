@@ -1,0 +1,31 @@
+#include<iostream>
+using namespace std;
+void getData();
+int new_population();
+	int P,B,D,N,yrs;
+int main()
+{
+	getData();
+	new_population();
+	cout<<"The new population is "<<N<<endl;
+	return 0;
+}
+
+
+void getData()
+{
+	cout<<"Enter the starting size of a population";
+	cin>>P;
+	cout<<"What is the annual birth rate:";
+	cin>>B;
+	cout<<"What is the annual birth rate:";
+	cin>>D;
+	cout<<"For how many years you want to calculate population:";
+	cin>>yrs;
+}
+int new_population()
+{
+	N=P+B*P-D*P;
+	N=N*yrs;
+	return N;
+}

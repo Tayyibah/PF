@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+char strtcat( char *string1, char *string2);
+int main()
+{
+	char string1[15]="Ammara ";
+	char string2[8]="khalid";
+	cout<<"First string is:"<<string1<<endl;
+	cout<<"Second string is:"<<string2<<endl;
+	cout<<"After concatination string 1 is:"<<	strcat (string1, string2);
+	return 0;
+}
+char strtcat( char *string1, char *string2)
+{
+	int i;
+		 for( i=0; string1[i]!='\0'; ++i);  /* i contains length of string s1. */
+    for(int j=0; string2[j]!='\0'; ++j, ++i)
+    {
+        string1[i]=string2[j];
+    }
+	return *string1;
+}

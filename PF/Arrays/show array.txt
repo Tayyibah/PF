@@ -1,0 +1,17 @@
+#include<iostream>
+#include<string>
+using namespace std;
+int main()
+{
+	const int rows_size=3;
+	const int cols_size=2;
+	int table[rows_size][cols_size]={{1,2},{3,4},{5,6}};
+	for(int i=0;i<rows_size;i++)
+	{
+		for(int j=0;j<cols_size;j++)
+		{
+		cout<<table[i][j]<<" ";
+		}
+	}
+return 0;
+}

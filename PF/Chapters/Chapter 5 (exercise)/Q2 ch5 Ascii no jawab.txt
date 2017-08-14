@@ -1,0 +1,77 @@
+#include<iostream>
+using namespace std;
+void asciiCodes(char);
+int main()
+{
+	char j=0;
+	asciiCodes(j);
+return 0;
+}
+
+void asciiCodes(char j)
+
+{
+cout<<"Ascii of characters between 0 & 127 are ";
+cout<<endl;
+
+for(char j=0;j<16;j++)
+		{
+			cout<<j<<" ";
+		}
+		cout<<endl;
+		cout<<endl;
+
+
+for(char j=16;j<32;j++)
+		{
+			cout<<j<<" ";
+		}
+		cout<<endl;
+		cout<<endl;
+			
+
+for(char j=32;j<48;j++)
+		{
+			cout<<j<<" ";
+		}
+		cout<<endl;
+		cout<<endl;
+
+for(char j=48;j<64;j++)
+		{
+			cout<<j<<" ";
+		}
+		cout<<endl;
+		cout<<endl;
+		
+for(char j=64;j<80;j++)
+		{
+			cout<<j<<" ";
+		}
+		cout<<endl;
+		cout<<endl;
+		
+for(char j=80;j<96;j++)
+		{
+			cout<<j<<" ";
+		}
+		cout<<endl;
+		cout<<endl;
+		
+		
+for(char j=96;j<112;j++)
+		{
+			cout<<j<<" ";
+		}
+		cout<<endl;
+		
+		cout<<endl;
+		
+for(char j=112;j<128;j++)
+		{
+			cout<<j<<" ";
+		}
+	cout<<endl;
+	
+		cout<<endl;
+}

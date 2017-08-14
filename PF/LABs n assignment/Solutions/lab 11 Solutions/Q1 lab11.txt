@@ -1,0 +1,49 @@
+//Tayyibah Allaudin
+//roll no: bsef14a011
+//#include<iostream>
+//using namespace std;
+//int compareAndCount (int a1[], int a2[], int n);
+//int getinputa1(int[], int);
+//int getinputa2(int[], int);
+//
+//int main()
+//{
+//	const int n=15;
+//	int a1[n];
+//	int a2[n];
+//	getinputa1(a1, n);
+//	getinputa2(a2,n);
+//	cout<<"Similar numbers in entered arrays are :"<<compareAndCount ( a1,a2 , n);
+//     cout<<endl;
+//	return 0;
+//}
+//int compareAndCount (int a1[], int a2[], int n)
+//{
+//		int count1=0;
+//	for (int count2=0; count2<n; count2++)
+//	{
+//		if (a1[count2]==a2[count2])
+//		{
+//			count1=count1+1;
+//		}
+//	}
+//	return count1;
+//}
+//int getinputa1(int a1[], int n)
+//{
+//	for( int i=0; i<n; i++)
+//	{
+//		cout<<"Enter a number for array 1:";
+//		cin>>a1[i];
+//	}
+//	return 0;
+//}
+//int getinputa2(int a2[], int n)
+//{
+//	for( int i=0; i<n; i++)
+//	{
+//		cout<<"Enter a number for  array 2:";
+//		cin>>a2[i];
+//	}
+//	return 0;
+//}

@@ -1,0 +1,33 @@
+#include<iostream>
+#include<iomanip>
+using namespace std;
+int main()
+{
+	const int racks=2;
+	const int shelves=3;
+	const int books=4;
+	double store[racks][shelves][books];
+	for(int i=0;i<racks;i++)
+	{
+		for(int j=0;j<shelves;j++)
+		{
+			for(int k=0;k<books;k++)
+			{
+				cin>>store[i][j][k];
+			}
+		}
+	}
+	for(int i=0;i<racks;i++)
+	{
+		for(int j=0;j<shelves;j++)
+		{
+			for(int k=0;k<books;k++)
+			{
+				cout<<setw(2)<<store[i][j][k]<<" ";
+			}
+		cout<<endl;
+		}
+		cout<<endl;
+	}
+return 0;
+}

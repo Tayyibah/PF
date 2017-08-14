@@ -1,0 +1,60 @@
+#include<iostream>
+using namespace std;
+void showArray(int[],int);
+int getLowest(int[],int);
+int arrayTotal(int array[],int size,int lowest);
+int averageArray(int total,int size);
+int avg=0,total=0;
+int main()
+{
+	const int size=10;
+	int array[size]={3,2,1,4,5,6,7,8,9,10};
+	int lowest=array[0];
+	showArray(array,size);
+	lowest=getLowest(array,size);
+	cout<<"The lowest content in array is "<<lowest<<endl;
+	total=arrayTotal(array,size,lowest);
+	cout<<"The sum of all nums by dropping lowest is "<<total<<endl;
+	averageArray(total,size-1);
+	cout<<"The average of all contents is "<<avg<<endl;
+	return 0;
+}
+
+void showArray(int array[],int size)
+{
+	cout<<"The contents of array are ";
+	for(int i=0;i<size;i++)
+		{
+	cout<<array[i]<<" ";
+		}
+	cout<<endl;
+}
+
+int getLowest(int array[],int size)
+{
+	int lowest=array[0];
+	for(int i=0;i<size;i++)
+		{
+	if(array[i]<lowest)
+	{
+	lowest=array[i];
+	}
+		}
+	return lowest;
+}
+
+int arrayTotal(int array[],int size,int lowest)
+{
+	for(int i=0;i<size;i++)
+		{
+	total=total+array[i];
+		}
+	total=total-lowest;
+	return total;
+}
+
+int averageArray(int total,int size)
+{
+	avg=total/size;
+	return avg;
+}

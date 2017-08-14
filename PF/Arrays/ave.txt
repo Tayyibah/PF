@@ -1,0 +1,24 @@
+
+#include<iostream>
+using namespace std;
+void avgArr(int arr[],int);
+int main()
+{
+const int size=5;
+int arr[size]={1,2,3,4,5};
+int avg=0;
+avgArr(arr,size);
+return 0;
+}
+void avgArr(int arr[],int size)
+{int sum=0;
+	int avg=0;
+	int i=0;
+for(int i=0;i<size;)
+	{
+sum=sum+arr[i];
+i=i++;
+	}
+avg=sum/(i+1);
+cout<<"Average:"<<avg<<endl;
+}

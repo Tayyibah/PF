@@ -1,0 +1,21 @@
+#include<iostream>
+#include<iostream>
+using namespace std;
+int main()
+{
+	int lowest;
+	int count;
+	const int size=5;
+	int arr[size]={4,2,3,0,5};
+	for(int count=1;count<size;count++)
+	{
+		lowest=arr[0];
+	if(arr[count]<lowest)
+		{
+		lowest=arr[count];
+		cout<<lowest<<endl;
+		}
+	
+	}
+	return 0;
+}

@@ -1,0 +1,51 @@
+#include<string>
+#include<iomanip>
+using namespace std;
+int main()
+{
+	int no_students;
+	cout<<"Enter no. of students : ";
+	cin>>no_students;
+		if(no_students<1||no_students>25)
+		#include<iostream>
+#include<string>
+#include<iomanip>
+using namespace std;
+int main()
+{
+	int no_students;
+	string name="a";
+	cout<<"Enter no. of students : ";
+	cin>>no_students;
+		if(no_students<1||no_students>25)
+		{
+			cout<<"There must be 1 to 25 of students so,Enter no. of students again: ";
+			cin>>no_students;
+		}
+	for(int j=1;j<=no_students;j++)
+		{
+			for(int i=1;i<=no_students;i++)
+			{
+			cout<<"Enter name of student "<<i<<" :";
+			cin>>name;
+			}
+			string name1="a";
+			if(name>name1)
+			{
+			cout<<"name of student "<<name<<" :";
+			}
+		}
+	return 0;
+}{
+			cout<<"There must be 1 to 25 of students so,Enter no. of students again: ";
+			cin>>no_students;
+		}
+	for(int i=1;i<=no_students;i++)
+		{
+			
+			string name="a";
+			cout<<"Enter name of student "<<i<<" :";
+			getline(cin,name);
+		}
+	return 0;
+}

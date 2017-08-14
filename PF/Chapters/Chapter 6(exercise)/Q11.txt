@@ -1,0 +1,44 @@
+#include<iostream>
+using namespace std;
+void getJugdeData(int &);
+void calcScore();
+int findLowest();
+int findHighest();
+int totalEmploys=0,avg=0,lowest=0,highest=0;
+int num,numEmploys;
+int main()
+{
+	for(int i=1;i<=5;i++)
+	{
+	getScore(score);
+	}
+	calcAverage();
+	cout<<"The average of all scores dropping lowest is "<<avg<<endl;
+return 0;
+}
+
+void getJugdeData(int &&numEmploys);
+{
+	cout<<"Enter the number of employs:";
+	cin>>numEmploys;
+	return numEmploys;
+}
+
+
+
+void calcAverage()
+{
+	findLowest();
+	findHighest();
+	totalScore=totalScore+lowest;
+	avg=totalScore/4;
+}
+
+int findLowest()
+{
+	if(userScore<lowest)
+	userScore=lowest;
+	return lowest;
+}
+
+int findHighest();

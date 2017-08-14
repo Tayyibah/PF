@@ -1,0 +1,40 @@
+#include<iostream>
+using namespace std;
+void getScore(int &);
+void calcAverage();
+int findLowest();
+int totalScore=0,avg=0,lowest=0;
+int score,userScore;
+int main()
+{
+	for(int i=1;i<=5;i++)
+	{
+	getScore(score);
+	}
+	calcAverage();
+	cout<<"The average of all scores dropping lowest is "<<avg<<endl;
+return 0;
+}
+
+void getScore(int &userScore)
+{
+	cout<<"Enter the score:";
+	cin>>userScore;
+	totalScore=totalScore+userScore;
+}
+
+
+
+void calcAverage()
+{
+	findLowest();
+	totalScore=totalScore+lowest;
+	avg=totalScore/4;
+}
+
+int findLowest()
+{
+	if(userScore<lowest)
+	userScore=lowest;
+	return lowest;
+}

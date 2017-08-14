@@ -1,0 +1,29 @@
+#include<iostream>
+#include<string>
+using namespace std;
+int main()
+{
+	string str1,str2;
+	cout<<"Enter string 1:";
+	cin>>str1;
+	cout<<"Enter string 2:";
+	cin>>str2;
+	if(str1<str2)
+	{
+	cout<<"String 1 is less than String 2"<<endl;
+	cout<<str1<<endl;
+	cout<<str2<<endl;
+	}
+	if(str1==str2)
+	{
+	cout<<"String 1 is equal to String 2"<<endl;
+	}
+	if(str1>str2)
+	{
+	cout<<"String 1 is greater than String 2"<<endl;
+	cout<<str2<<endl;
+	cout<<str1<<endl;
+	}
+	return 0;
+}
+

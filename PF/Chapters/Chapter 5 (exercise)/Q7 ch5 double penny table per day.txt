@@ -1,0 +1,23 @@
+#include<iostream>
+using namespace std;
+void pennysForDays(int);
+int main()
+{
+	int days,pennys;
+	cout<<"Enter number of days:";
+	cin>>days;
+	pennysForDays(days);
+	return 0;
+}
+
+
+void pennysForDays(int days)
+{
+	cout<<"\nDays---------------------------Pennys\n-------------------------------------------------------------------------"<<endl;
+	int penny=1;
+	for(int i=0;i<days;i++)
+	{
+		penny=penny*2;
+		cout<<i<<"                               "<<penny<<endl;
+	}
+}

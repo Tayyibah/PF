@@ -1,0 +1,26 @@
+#include<iostream>
+#include<string>
+#include<iomanip>
+using namespace std;
+int main()
+{
+	const double tuition_A=7000;
+	const double tuition_B=9000;
+	string tuition;
+	cout<<"My name is Tayyibah.\n";
+	cout<<"I live in Lahore.\n";
+	cout<<"I teach tuition $_7000,";
+	cout<<"And another is of $_9000\n";
+	cout<<"Nowadays you teach tuitions of:";
+	cin>>tuition;
+	cout<<fixed<<showpoint<<setprecision(2);
+	if(tuition=="$_7000")
+	{
+	cout<<"You teach a tuition of $ "<<tuition_A<<" nowadays"<<endl;
+	}
+	else if(tuition=="$_9000")
+	{
+	cout<<"You teach a tuition of $ "<<tuition_B<<" nowadays"<<endl;
+	}
+	return 0;
+}

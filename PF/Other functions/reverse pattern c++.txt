@@ -1,0 +1,47 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	int size;
+	int size1;
+	cout<<"Enter a number";
+	cin>>size;
+	while (size<0)
+	{
+		cout<<"Enter valid number";
+		cin>>size;
+	}
+	size1=size;
+	for(int i=1; i<=size; i++)
+	{
+		for(int j=1; j<=size1; j++)
+		{
+			cout<<j;
+		}
+		size1=size1-1;
+		cout<<endl;
+	}
+	return 0;
+}
+
+The Common Types of Computer Viruses
+
+Introduction of Virus: Computer viruses are similar to biological viruses in the way they multiply in number and in the way they need a host to survive. However, in both scenarios there must be a cause, such a weak immune system or an expired anti-virus program, in order for the virus to penetrate and spread. Having a reliable anti-virus program is the best solution.Just as a biological virus spreads by injecting its DNA into a host cell, whereas a computer virus needs to attach itself to a document or program to infect other computers and programs.
+
+Dependence of virus and importance of virus learning:The way a computer virus infiltrates your PC depends on the type of virus it is. Because all computers viruses have their own features and factors that make them unique and dangerous to the health of your computer. Making it important than ever to learn about the different types of computer viruses lurking in the corners of cyberspace and on the fringes of your hard drive. The advantage of learning more about these computer viruses is two fold. First, you'll gain valuable knowledge, and second you'll be able to better prevent and deal with a computer virus when and if it preys your computer.
+
+Due to the many different types of computer viruses, it can be confusing at times to diagnose what kind of virus your computer is suffering from. To make the identifying process easier, we've listed the three basic types of viruses that you will likely encounter.
+
+These computer viruses include:
+
+Trojan virus
+Worms
+Email Viruses
+Trojan virus: The Trojan virus gets its name from an incident that occurs in Homer's Iliad. Similar to how the Greeks in Homer's poem sent an army of men, hidden in a wooden horse, to the Trojans to get into the wall of the city. A Trojan horse appears to be nothing more than an interesting computer program or file, such as "saxophone.wav file" on the computer of user who's interested in collecting sound samples. The Trojan virus once on your computer, doesn't reproduce, but instead makes your computer susceptible to malicious intruders by allowing them to access and read your files. Making this type of virus extremely dangerous to your computer's security and your personal privacy. Therefore, you should avoid downloading programs or files from sites if you're not 100 percent positive of what the file or program does.
+
+Worms: A Worm is a virus program that copies and multiplies itself by using computer networks and security flaws. Worms are more complex than Trojan viruses, and usually attack multi-user systems such as Unix environments and can spread over corporate networks via the circulation of emails. Once multiplied, the copied worms scan the network for further loopholes and flaws in the network. A classic example of a worm is the ILOVEYOU virus.
+
+The best way you can protect yourself from worms is by updating your security patches. Operating systems and application vendors normally provide these patches. In addition, you should avoid opening email attachments from unknown senders.
+
+Email viruses:Email viruses use email messages to spread. An email virus can automatically forward itself to thousands of people, depending on whose email address it attacks. To avoid receiving virus-laden emails, always check that your antivirus software is up-to-date and also stay clear of opening attachments, even from friends that you weren't expecting or don't know anything about. Also, block unwanted email viruses by installing a spam filter and spam blocker.

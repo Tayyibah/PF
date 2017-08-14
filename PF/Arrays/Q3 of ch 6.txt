@@ -1,0 +1,38 @@
+#include<iostream>
+#include<string>
+using namespace std;
+double getSales();
+void findHighest();
+const string n="NorthWest";
+const string ne="NorthEast";
+const string s="SouthWest";
+const string se="SouthEast";
+int highest=0,sales;
+string name;
+
+int main()
+{
+	for(int i=0;i<4;i++)
+	{
+	getSales();
+	findHighest();
+	}
+	cout<<"Highest sales are for: "<<highest<<endl;
+	return 0;
+}
+
+
+double getSales()
+{
+	cout<<"The sales are for ";
+	cin>>name;
+	cout<<"Enter sales for "<<name<<" ";
+	cin>>sales;
+	return sales;
+}
+void findHighest()
+{
+	
+	if(highest<sales)
+	highest=sales;
+}

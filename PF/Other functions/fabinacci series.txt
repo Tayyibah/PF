@@ -1,0 +1,20 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int num;
+	cout<<"Enter a number";
+	cin>>num;
+	int i=0,j=1;
+	int k,count=0;
+	cout<<i<<j<<" ";
+	while(count<=num)
+	{
+		k=i+j;
+		cout<<k<<" ";
+		i=j;
+		j=k;
+	count++;
+	}
+	return 0;
+}

@@ -1,0 +1,37 @@
+#include<iostream>
+#include<string>
+#include<iomanip>
+using namespace std;
+int main()
+{
+	int month,days,hrs;
+	string month_1="January";
+	string month_2="February";
+	string month_3="March";
+	string month_4="April";
+	string month_5="May";
+	string month_6="June";
+	string month_7="July";
+	string month_8="August";
+	string month_9="September";
+	string month_10="October";
+	string month_11="November";
+	string month_12="December";
+	cout<<"Month                   Days                     Hours"<<endl;
+	for(int month_i=1;month_i<12;month_i=month_i+2)
+	{
+		days=31;
+		hrs=24*days;
+	cout<<month_i<<"              "<<days<<"                   "<<hrs<<endl;
+	}
+	for(int month_i=3;month_i<12;month_i=month_i+3)
+	{
+		days=30;
+		hrs=24*days;
+	cout<<month_i<<"              "<<days<<"                   "<<hrs<<endl;
+	}
+		days=28;
+		hrs=24*days;
+	cout<<month_2<<"       "<<days<<"                   "<<hrs<<endl;
+return 0;
+}

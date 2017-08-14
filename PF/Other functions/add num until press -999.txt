@@ -1,0 +1,17 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int i=1;
+	int sum=0;
+	int num=0;
+while(num!=-999&&i>0)
+	  {
+	sum=num+sum;
+	cout<<"Enter a number: ";
+	cin>>num;
+	i++;	
+}
+	cout<<"Addition of all number:"<<sum<<endl;
+	return 0;
+}

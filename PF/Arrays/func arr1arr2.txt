@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+void multiply(int num1,int num2);
+int main()
+{
+	const int num=5;
+	int arr1[num]={6,6,6,6,7};
+	int arr2[num]={65,67,68,69,70};
+	multiply(num,num);
+	return 0;
+}
+void multiply(int num1,int num2)
+	{
+		const int num=5;
+		int arr1[num]={6,6,6,6,7};
+		int arr2[num]={65,67,68,69,70};
+		int result,count;
+		for(int count=0;count<num;count++)
+		cout<<arr1[count]<<"*"<<arr2[count]<<endl;
+		result=arr1[count]*arr2[count];
+		cout<<"num1*num2"<<result<<endl;
+	}

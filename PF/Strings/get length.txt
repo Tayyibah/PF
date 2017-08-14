@@ -1,0 +1,37 @@
+#include<iostream>
+using namespace std;
+int getlenght(char*ch)
+{
+	int c=0;
+	bool tr=true;
+	for(c=0;tr;c++)
+		if(ch[c]=='\0')
+			tr=false;
+	return c-1;
+}
+
+void copystr(char*ch,char*ch1)
+{
+	int c=0,l1,l2;
+	l1=getlenght(ch);
+	l2=getlenght(ch1);
+	if(l1==l2)
+		for(c=0;c<l2;c++)
+			ch[c]=ch1[c];
+	for(c=0;c<l2;c++)
+		cout<<ch[c];
+}
+
+int main()
+{
+	cout<<"enter 1st string:";
+	char*str=new char[100];
+	cin.getline(str,100);
+	cout<<"enter 2nd string:";
+	char*str1=new char[100];
+	cin.getline(str1,100);
+	cout<<"copied string  is:";
+		copystr(str,str1);
+	cout<<endl;
+	return 0;
+}

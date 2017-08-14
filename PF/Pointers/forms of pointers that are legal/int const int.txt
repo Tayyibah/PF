@@ -1,0 +1,16 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int a=10;
+	const int b=10;
+
+	const int *ptr=&a;
+	cout<<a<<endl;
+	cout<<&a<<endl;
+	cout<<ptr<<endl;
+	cout<<*ptr<<endl;
+	cout<<endl;
+
+	return 0;
+}

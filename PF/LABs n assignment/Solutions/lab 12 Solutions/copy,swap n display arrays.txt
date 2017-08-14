@@ -1,0 +1,65 @@
+//Write a program that contains following functions :
+//1 - bool copyArray(int*arr1, int size1, int*arr2, int size2) it takes two arrays and if size of
+//both arrays is same then it copies the data of arr1 to arr2 and returns true, if size is not
+//same then data is not copied and the function returns false.
+//2 - void swapArray(int*arr1, int size1, int*arr2, int size2)  it takes two arrays and if size
+//of both arrays is same then it swaps their data and returns true, if size is not same then
+//data is not swapped and the function returns false.
+//3 - void displayArray(int *arr, const int size)it takes an array and its size and displays all
+//the elements of the array.
+
+#include<iostream>
+using namespace std;
+void displayArray(int *arr, const int size)
+{
+	for (int i = 0; i < size; i++)
+	{
+		cout << arr[i] << " ";
+	}
+	cout << endl;
+}
+bool copyArray(int*arr1, int size1, int*arr2, int size2)
+{
+	if (size1 == size2)
+	{
+		for (int i = 0; i < size1; i++)
+		{
+			arr1[i] = arr2[i];
+		}
+		return true;
+	displayArray(arr1, size1);
+	displayArray(arr2, size2);
+	}
+	else
+		return false;
+}
+bool swapArray(int*arr1, int size1, int*arr2, int size2)
+{
+	int *temp = new int[size1];
+	if (size1 == size2)
+	{
+		for (int i = 0; i < size1; i++)
+		{
+			temp[i] = arr2[i];
+			arr2[i] = arr1[i] ;
+			arr1[i] = temp[i];
+		}
+		displayArray(arr1, size1);
+		displayArray(arr2, size2);
+		return true;
+	}
+	else
+		return false;
+}
+int main()
+{
+	const int size1 = 5;
+	const int size2=5;
+	int arr1[size1] = { 1, 2, 3, 4 ,5};
+	int arr2[size2] = { 11,22,33,44,55 };
+	copyArray(arr1, size1, arr2, size2);
+	swapArray(arr1, size1, arr2, size2);
+	displayArray(arr1, size1);
+	displayArray(arr2, size2);
+	return 0;
+}

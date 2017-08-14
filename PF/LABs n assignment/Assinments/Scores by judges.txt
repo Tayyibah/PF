@@ -1,0 +1,69 @@
+#include<iostream>
+using namespace std;
+int calcScores(int n1, int n2, int n3, int n4, int n5);
+int findLowest(int n1, int n2, int n3, int n4, int n5);
+int findHighest(int n1, int n2, int n3, int n4, int n5);
+int getJudgeData();
+int main()
+{
+	int judges = 5;
+	int score1;
+	int score2;
+	int score3;
+	int score4;
+	int score5;
+	score1 = getJudgeData();
+	score2 = getJudgeData();
+	score3 = getJudgeData();
+	score4 = getJudgeData();
+	score5 = getJudgeData();
+	cout << "Scores of consistants are " << calcScores(score1, score2, score3, score4, score5) << endl;
+	return 0;
+}
+int calcScores(int n1, int n2, int n3, int n4, int n5)
+{
+	int lowest;
+	int highest;
+	int sum;
+	int avg;
+	lowest=findLowest(n1, n2, n3, n4, n5);
+	highest=findHighest(n1, n2, n3, n4, n5);
+	sum = n1 + n2 + n3 + n4 + n5 - lowest - highest;
+	avg = sum / 3;
+	return avg;
+
+}
+int findLowest(int n1, int n2, int n3, int n4, int n5)
+{
+	if (n1 < n2 && n1 < n3 && n1 < n4 && n1 < n5)
+		return n1;
+	if (n2 < n1 && n2 < n3 && n2 < n4 && n2 < n5)
+		return n2;
+	if (n3 < n1 && n3 < n2 && n3 < n4 && n3 < n5)
+		return n3;
+	if (n4 < n2 && n4 < n3 && n4 < n1 && n4 < n5)
+		return n4;
+	if (n5 < n2 && n5 < n3 && n5 < n4 && n5 < n1)
+		return n5;
+
+}
+int findHighest(int n1, int n2, int n3, int n4, int n5)
+{
+	if (n1 > n2 && n1 > n3 && n1 > n4 && n1 > n5)
+		return n1;
+	if (n2 > n1 && n2 > n3 && n2 > n4 && n2 > n5)
+		return n2;
+	if (n3 > n1 && n3 > n2 && n3 > n4 && n3 > n5)
+		return n3;
+	if (n4 > n2 && n4 > n3 && n4 > n1 && n4 > n5)
+		return n4;
+	if (n5 > n2 && n5 > n3 && n5 > n4 && n5 > n1)
+		return n5;
+}
+int getJudgeData()
+{
+	int score;
+	cout << "Enter the scores u want to give:";
+	cin >> score;
+	return score;
+}

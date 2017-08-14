@@ -1,0 +1,25 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+double sec;
+double min,hrs,day;
+cout<<"Enter number of second:";
+cin>>sec;
+if(sec==60||sec>60&&sec<3600)
+	{
+		min=sec/60;
+cout<<"Number of second in minutes "<<min<<endl;
+}
+else if(sec==3600||sec>3600&&sec<86400)
+	{
+		hrs=sec/3600;
+cout<<"Number of seconds in hours "<<hrs<<endl;
+}
+else if(sec==86400||sec>86400)
+	{
+		day=sec/86400;
+cout<<"Number of seconds in a day "<<day<<endl;
+}
+return 0;
+}

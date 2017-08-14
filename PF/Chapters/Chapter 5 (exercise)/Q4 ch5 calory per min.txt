@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std;
+void oceanLevel(double cal);
+int main()
+{
+	double cal=3.9;
+	oceanLevel(cal);
+return 0;
+}
+
+void oceanLevel(double cal)
+{
+for(int min=0;min<=30;min=min+5)
+{
+	cout<<" Number of mm rising in "<<min<<" is "<<cal<<endl;
+	cal=cal+3.9;
+}
+}

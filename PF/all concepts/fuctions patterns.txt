@@ -1,0 +1,24 @@
+#include<iostream>
+using namespace std;
+void displayStars(int=2,int=2);
+int localVariable=99;
+int main()
+{
+displayStars();
+cout<<endl;
+displayStars(3);
+cout<<endl;
+displayStars(7,3);
+return 0;
+}
+void displayStars(int cols ,int rows)
+{
+	 for(int down=0;down<cols;down++)
+		 {
+			 for(int up=0;up<down;up++)
+				 {
+					cout<<rows;
+				 }
+			 cout<<endl;
+		 }
+}

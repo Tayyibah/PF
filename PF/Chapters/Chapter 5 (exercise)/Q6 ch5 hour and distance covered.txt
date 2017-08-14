@@ -1,0 +1,28 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	double speed;
+	double hour;
+	double distance;
+	cout<<"Enter speed: ";
+	cin>>speed;
+	cout<<"Enter time: ";
+	cin>>hour;
+	if(hour<0)
+	{
+cout<<"Enter valid time: ";
+	cin>>hour;
+	}
+	cout<<"Hour       Distance Travelled"<<endl;
+	cout<<"----------------------------------"<<endl;
+
+	for(int i=1;i<=hour;i++)
+	{
+	distance = i*speed;
+	cout<<i<<"              "<<distance <<endl;
+	}
+
+return 0;
+}
+

@@ -1,0 +1,22 @@
+#include<iostream>
+#include<ctime>
+#include<cstdlib>
+using namespace std;
+int main()
+{
+	int x,y,z;
+	unsigned(seed)=time(0);
+	srand(seed);
+	x=rand();
+	y=rand();
+	z=x+y;
+	
+	cout<<x<<"+"<<y<<endl;
+	cout<<"After solving sum in ur mind press enter to get answer"<<endl;
+	cin.get();
+	cout<<" "<<x<<endl;
+	cout<<"+"<<y<<endl;
+	cout<<"------"<<endl;
+	cout<<" "<<z<<endl;
+	return 0;
+}
